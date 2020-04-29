@@ -1,17 +1,22 @@
 def add(a ,b):
-    return a + b
+    res = print("Addition = ", a + b)
+    return res
 
 def sub(a, b):
-    return a - b
+    res = print("Substraction = ", a - b)
+    return res
 
 def mul(a, b):
-    return a * b
+    res = print("Multiplication = ", a * b)
+    return res
 
 def div(a, b):
-    return a / b
+    res = print("Division = ", a / b)
+    return res
 
 def mod(a, b):
-    return a % b
+    res = print("Mudulo = ", a % b)
+    return res
 
 print("Enter first number: ")
 a = int(input())
@@ -34,19 +39,19 @@ print("Here is the result:")
 
 
 if c == 1:
-    print("Addition = ", add(a,b))
+    add(a, b)
 elif c == 2:
-    print("Substraction = ", sub(a,b))
+    sub(a, b)
 elif c == 3:
-    print("Multiplication = ", mul(a,b))
+    mul(a, b)
 elif c == 4:
-    print("Division = ", div(a,b))
+    div(a, b)
 elif c == 5:
-    print("Mudulo = ", mod(a,b))
+    mod(a, b)
 elif c == 6:
-    print("Addition = ", add(a,b))
-    print("Substraction = ", sub(a,b))
-    print("Multiplication = ", mul(a,b))
-    print("Division = ", div(a,b))
-    print("Mudulo = ", mod(a,b))
+    add(a, b)
+    sub(a, b)
+    mul(a, b)
+    div(a, b)
+    mod(a, b)
 else: print("You didn't chose a right number from the list")
